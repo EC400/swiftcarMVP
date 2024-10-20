@@ -1,0 +1,56 @@
+.menu-leiste{
+  background-color: white;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 95px;
+}
+
+.logo{
+  width: 150px;
+  margin-left: 28px;
+  margin-top: -32px;
+  margin-bottom: -32px;
+  margin-right: 8px;
+}
+
+.menu-punkte{
+  margin-left: 16px;
+  flex: 1;
+}
+.menu-punkte-text{
+  font-size: 14px;
+  color: black;
+  margin-left: 8px;
+  margin-right: 12px;
+  transition: color 0s;
+}
+.menu-punkte-text:hover{
+  transition: color 0.6s;
+  color: #2756ce;
+}
+.menu-punkte-text:active{
+  transition: color 0s;
+  color: #9ab1ec;
+}
+
+.konto-optionen{
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.konto-optionen-text{
+  color: #333;
+  font-size: 14px;
+  margin-right: 8px;
+  font-weight: normal;
+}
+
+.log-out-icon{
+  width: 20px;
+  margin-top: 2px;
+}

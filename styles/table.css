@@ -1,0 +1,105 @@
+.meine-aufträge {
+  margin: 72px 0 20px 0;
+  display: flex;
+  justify-content: right;
+}
+
+.tabelle-container {
+  margin: 0 32px;
+  padding: 0;
+  width: 1500px;
+}
+
+/* Allgemeine Tabellenstruktur */
+table {
+  background-color: #f4f6fb;
+  width: 100%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  border-spacing: 0;
+  border-radius: 30px; /* Runde Ecken der gesamten Tabelle */
+  
+}
+
+/* Fixierung des Table-Headers mit höherem z-index */
+thead {
+  background-color: #2756ce;
+  color: white;
+  font-size: 18px;
+  position: sticky;
+  top: 95px;
+  z-index: 10;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für optische Trennung */
+  overflow-y: auto;
+}
+
+td, th {
+  padding: 20px 24px;
+  text-align: left;
+}
+
+th {
+  height: 35px;
+  font-weight: normal;
+}
+
+th:first-child {
+  border-radius: 30px 0 0 0;
+}
+
+th:last-child {
+  border-radius: 0 30px 0 0;
+}
+
+
+
+/* Nur für die erste und letzte Zelle in der allerletzten Tabellenzeile */
+tr:last-child td:first-child {
+  border-radius: 0 0 0 30px;
+}
+
+tr:last-child td:last-child {
+  border-radius: 0 0 30px 0;
+}
+
+tr:nth-child(even){
+  background-color: #dce5fd;
+}
+
+
+.Auftrag-ID-Text {
+  text-align: center;
+}
+
+.Datum-Container,
+.Uhrzeit-Container {
+  display: flex;
+  align-items: center;
+}
+
+.datum-icon,
+.uhrzeit-icon {
+  margin-right: 6px;
+}
+
+.auftrag-icon {
+  vertical-align: middle;
+}
+
+.Auftrag-ID {
+  width: 100px;
+  text-align: center;
+}
+
+.Abholzeit {
+  width: 200px;
+}
+
+.startort {
+  width: 10px;
+}
+
+.preis {
+  width: 20px;
+}
