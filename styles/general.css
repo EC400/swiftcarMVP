@@ -1,6 +1,9 @@
+*{
+  font-family: "Inter";
+}
+
 body{
   margin: 0;
-  font-family: "Inter";
   padding: 0;
 }
 
@@ -19,16 +22,7 @@ a{
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'Inter';
-  src: url('sources/Inter/Inter-Regular.ttf') format('truetype'); /* Pfad zur regulären Schrift */
-  font-weight: 400; /* Reguläre Schrift */
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('sources/Inter/Inter-Regular.ttf') format('truetype'); /* Pfad zur regulären Schrift */
-  font-weight: 400; /* Reguläre Schrift */
-  font-style: normal;
+p{
+  font-size: 20px;
+  font-weight: 600;
 }

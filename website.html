@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiftcar</title>
+
+</head>
+<body>
+  <div class="menu-leiste">
+    <div class="logo">
+      <img src="sources/Wordmark.svg" alt="Swiftcar Logo">
+    </div>
+    <div class="menu-punkte">
+      <a class="menu-punkte-text" href="#">Aufträge</a>
+      <a class="menu-punkte-text" href="#">Kunden</a>
+      <a class="menu-punkte-text" href="#">Versicherung</a>
+      <a class="menu-punkte-text" href="#">Rechnungen</a>
+    </div>
+    <div class="konto-optionen">
+      <a class="konto-optionen-text" href="#">Enrico Herold</a>
+      <img class="log-out-icon" src="sources/logout_24dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg" alt="Logout">
+    </div>
+  </div>
+
+  <div class="meine-aufträge">
+    <!-- Add Button -->
+    <button id="openModalBtn">Neuen Auftrag hinzufügen</button>
+
+    <!-- Tabelle für Aufträge -->
+    <div class="tabelle-scroll-container">
+      <table class="meine-aufträge-tabelle" id="aufträgeTabelle">
+        <thead>
+          <tr>
+            <th class="Auftrag-ID">Auftrag-Id</th>
+            <th class="Abholzeit">Abholzeit</th>
+            <th class="Startort">Startort</th>
+            <th class="Ankunftszeit">Ankunftszeit</th>
+            <th class="Abgabeort">Abgabeort</th>
+            <th class="Strecke">Strecke</th>
+            <th class="Auftraggeber">Auftraggeber</th>
+            <th class="Preis">Preis</th>
+          </tr>
+        </thead>
+        <tbody id="tabelleBody">
+          <!-- Dynamisch hinzugefügte Zeilen erscheinen hier -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <p>Neuer Fahrtauftrag</p>
+
+        <form action="#" class="field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="date" id="abholzeit-field" placeholder="">
+            <label class="mdl-textfield__label" for="abholzeit-field">Abholzeit</label>
+          </div>
+        </form>
+
+        <form action="#" class="field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="startort-field">
+            <label class="mdl-textfield__label" for="startort-field">Startort</label>
+          </div>
+        </form>
+
+        <form action="#" class="field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="date" id="abgabezeit-field" placeholder="">
+            <label class="mdl-textfield__label" for="abgabezeit-field">Abgabezeit</label>
+          </div>
+        </form>
+
+        <form action="#" class="field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="abgabeort-field">
+            <label class="mdl-textfield__label" for="abgabeort-field">Abgabeort</label>
+          </div>
+        </form>
+
+        <form action="#" class="field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="number" id="strecke-field">
+            <label class="mdl-textfield__label" for="strecke-field">Strecke</label>
+          </div>
+        </form>
+
+        <form action="#" class="field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="auftraggeber-field">
+            <label class="mdl-textfield__label" for="auftraggeber-field">Auftraggeber</label>
+          </div>
+        </form>
+
+        <form action="#" class="field">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="number" id="preis-field">
+            <label class="mdl-textfield__label" for="preis-field">Preis</label>
+          </div>
+        </form>
+
+        <div class="button-container">
+          <button id="closeModalBtn">Schließen</button>
+          <button id="hinzufügenBtn">Hinzufügen</button>
+        </div>
+    </div>
+
+</body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/menu-leiste.css">
+  <link rel="stylesheet" href="styles/table.css">
+  <link rel="stylesheet" href="styles/modal.css">
+
+  <link rel="stylesheet" href="material-design/material.css">
+  <link rel="stylesheet" href="material-design/material.min.css">
+  <link rel="stylesheet" href="material-design/material.min.css.map">
+  <script defer src="material-design/material.js"></script>
+  <script defer src="material-design/material.min.js"></script>
+  <script defer src="material-design/material.min.js.map"></script>
+
+  <!-- Script -->
+  <script type="module" src="logik.js"></script>
+
+</html>

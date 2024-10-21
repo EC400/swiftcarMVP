@@ -1,12 +1,14 @@
 .meine-aufträge {
-  margin: 72px 0 20px 0;
+  justify-content: center;
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  margin-top: 150px;
+  margin-left: 64px;
+  margin-right: 64px;
 }
 
 .tabelle-container {
-  margin: 0 32px;
-  padding: 0;
+  padding-top: 100px;
   width: 1500px;
 }
 
@@ -17,7 +19,6 @@ table {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   border-spacing: 0;
   border-radius: 30px; /* Runde Ecken der gesamten Tabelle */
-  
 }
 
 /* Fixierung des Table-Headers mit höherem z-index */
@@ -27,7 +28,7 @@ thead {
   font-size: 18px;
   position: sticky;
   top: 95px;
-  z-index: 10;
+  z-index: 3;
   overflow: hidden;
   border-radius: 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Schatten für optische Trennung */
@@ -41,7 +42,7 @@ td, th {
 
 th {
   height: 35px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 th:first-child {
@@ -51,7 +52,6 @@ th:first-child {
 th:last-child {
   border-radius: 0 30px 0 0;
 }
-
 
 
 /* Nur für die erste und letzte Zelle in der allerletzten Tabellenzeile */
@@ -65,6 +65,10 @@ tr:last-child td:last-child {
 
 tr:nth-child(even){
   background-color: #dce5fd;
+}
+
+td:first-child{
+  text-align: center;
 }
 
 
